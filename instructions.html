@@ -1,0 +1,383 @@
+<!-- Week 3 Day 3 Active Record -->
+
+<!DOCTYPE html><html><head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"6b0b5a2e6a","applicationID":"11108052","transactionName":"dwsKR0QKCVwEQh9bDVUICFZYAgBDTkNYVxI=","queueTime":7,"applicationTime":396,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(){}function r(t){function e(t){return t&&t instanceof n?t:t?a(t,i,o):o()}function c(n,r,o){t&&t(n,r,o);for(var i=e(o),a=f(n),c=a.length,u=0;c>u;u++)a[u].apply(i,r);return i}function u(t,e){p[t]=f(t).concat(e)}function f(t){return p[t]||[]}function s(){return r(c)}var p={};return{on:u,emit:c,create:s,listeners:f,context:e,_events:p}}function o(){return new n}var i="nr@context",a=t("gos");e.exports=r()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){if(!v++){var t=l.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(p,function(e,n){t[e]||(t[e]=n)});var n="https"===s.split(":")[0]||t.sslForHttp;l.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=l.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),c=t(1),u=window,f=u.document;t(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-852.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),l=e.exports={offset:i(),origin:s,features:{},xhrWrappable:d};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",n)),a("mark",["firstbyte",i()]);var v=0},{1:12,2:3,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],12:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],13:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}]},{},["G9z0Bl"]);</script><title>LearningPortal</title><link rel="stylesheet" media="screen" href="/assets/application-3260db8232a33ad3c9f7ce1e0c7b146c.css" /><script src="/assets/application-a615604357cfcc1602a15757d5794e47.js"></script><meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="PoDTu0itxn/kKBsfmky7urIGjEWDMyltvx9oVF1B8SRdr40fJN7gs5VLsNg8I1eBRaI+bsUINsulWR7QO3uZdg==" /></head><body><nav class="navbar navbar-default" role="navigation"><div class="container"><div class="navbar-header"><button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/">NEXT Academy</a></div><div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><ul class="nav navbar-nav"><li><a href="/challenges">Challenges</a></li><li><a href="https://docs.google.com/spreadsheets/d/1MoYjS2uGg53pMk9Rsyn9ECcyZ0guncfEzGM4sFJGnmw/edit?usp=sharing">Latest Attendance</a></li></ul><ul class="nav navbar-nav navbar-right"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Signed In As&nbsp;<span class="caret"></span></a><ul class="dropdown-menu" role="menu"><li><a title="contrepoint21@gmail.com" href="/users/64cb09ed-0061-406f-9234-245f78a43a39/edit"><img height="22" width="22" alt="contrepoint21@gmail.com" class="header-user-gravatar" src="http://www.gravatar.com/avatar/d20d2736d18703ba288facd70c301a98" /> Janice</a></li><li class="divider"></li><li><a href="/signin">Sign in another user</a></li><li><a rel="nofollow" data-method="delete" href="/signout">Sign out all</a></li></ul></li></ul></div></div></nav><div class="container"><div class="row page-header challenge-header"><div class="col-sm-12"><h2>ActiveRecord, Jr. 1: A Basic ORM&nbsp;<span class="label label-danger">Core</span></h2></div></div><div class="row" id="challenge"><div class="col-sm-2"><ul class="nav nav-pills nav-stacked"><li><a href="/challenges">Back</a></li><li><a class="btn btn-warning" rel="nofollow" data-method="post" href="/challenges/82/attempts">Start Challenge</a></li></ul></div><div class="col-sm-8"><div class="row"><div class="col-sm-12"><ul class="nav nav-tabs" id="challengeTab" role="tablist"><li class="active"><a data-toggle="tab" href="#body" role="tab"> Description</a></li><li><a data-toggle="tab" href="#attempts" role="tab"> Your Attempts</a></li><li><a data-toggle="tab" href="#other-attempts" role="tab"> Recent</a></li></ul><div class="tab-content"><div class="tab-pane fade in active" id="body"><p>In previous challenges we&#39;ve drawn a map between Ruby World and SQL World that looked something like this:</p>
+
+<table class='table table-bordered table-striped'><thead>
+<tr>
+<th>SQL World</th>
+<th>Ruby World</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>A table named <code>politicians</code></td>
+<td>A class named <code>Politician</code></td>
+</tr>
+<tr>
+<td>A row from <code>politicians</code></td>
+<td>An instance of <code>Politician</code></td>
+</tr>
+<tr>
+<td><pre>SELECT * FROM politicians WHERE party = &#39;D&#39;</pre></td>
+<td><pre>Politician.where(&#39;party = ?&#39;, &#39;D&#39;)</pre></td>
+</tr>
+<tr>
+<td><pre>SELECT * FROM politicians WHERE id = 10</pre></td>
+<td><pre>Politician.where(&#39;id = ?&#39;, 10)</pre></td>
+</tr>
+</tbody></table>
+
+<p>In SQL World we talk in terms of tables, rows, and relations. In Ruby World we talk in terms of classes, objects, and associations. The table above elucidates a kind of mapping that has a name: <a href="http://en.wikipedia.org/wiki/Object-relational_mapping">Object-relational mapping</a> or ORM.</p>
+
+<p>There are many libraries in Ruby which implement an ORM, including</p>
+
+<ul>
+<li><a href="http://guides.rubyonrails.org/active_record_querying.html">ActiveRecord</a>, which is what Rails uses by default</li>
+<li><a href="http://sequel.rubyforge.org/">Sequel</a></li>
+<li><a href="http://datamapper.org/">DataMapper</a></li>
+</ul>
+
+<p>The idea behind most Ruby ORMs is that your model classes inherit from a base class that implements the general functionality to interact with the database and any model-specific code lives in the model (child) class. This can be tricky because the parent class doesn&#39;t know beforehand anything about the structure of your database. How is it supposed to know that the class <code>Student</code> corresponds to the table <code>students</code>?</p>
+
+<p>We&#39;re going to implement <strong>ActiveRecord, Jr.</strong> to get an idea of how one might build an ORM. This will make it much easier to reason about how the real ActiveRecord works once we get there, and will answer many of your questions about how to organize database calls in your code.</p>
+
+<h2>Objectives</h2>
+
+<h3>Download the Student Skeleton Application</h3>
+
+<p>First, <a href="http://cl.ly/260238470M3I">go here to download the student skeleton application</a>. This is a ZIP file that will uncompress into a directory called <code>activerecord_jr</code>. This code assumes there are two tables: <code>students</code> and <code>cohorts</code>. A student belongs to a single cohort and a cohort has many students.</p>
+
+<p>This might be the most advanced app you&#39;ve seen, but don&#39;t freak out! Here&#39;s what each file means:</p>
+
+<table class='table table-bordered table-striped'><thead>
+<tr>
+<th>Filename</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>app.rb</code></td>
+<td>Loads all of ActiveRecord, Jr. and our application-specific code</td>
+</tr>
+<tr>
+<td><code>Gemfile</code></td>
+<td>A <a href="http://gembundler.com/" target="_blank">bundler</a> Gemfile, used to track the gems the app needs to run</td>
+</tr>
+<tr>
+<td><code>Gemfile.lock</code></td>
+<td>A misc. file related to the Gemfile</td>
+</tr>
+<tr>
+<td><code>models</code></td>
+<td>A directory containing all your model classes</td>
+</tr>
+<tr>
+<td><code>models/cohort.rb</code></td>
+<td>Contains the <code>Cohort</code> class</td>
+</tr>
+<tr>
+<td><code>models/database_model.rb</code></td>
+<td>Contains the <code>Database::Model</code> class, our &quot;ActiveRecord, Jr.&quot;</td>
+</tr>
+<tr>
+<td><code>models/student.rb</code></td>
+<td>Contains the <code>Student</code> class</td>
+</tr>
+<tr>
+<td><code>Rakefile</code></td>
+<td>A list of <a href="http://en.wikipedia.org/wiki/Rake_%28software%29" target="_blank">rake</a> tasks, used to perform misc. one-off tasks like creating a database and seeding the database with dummy data</td>
+</tr>
+<tr>
+<td><code>README.md</code></td>
+<td>The README! Sadly, empty right now. Use this challenge as the README and go bug josh if something&#39;s utterly confusing.</td>
+</tr>
+</tbody></table>
+
+<h3>Set up the Skeleton App</h3>
+
+<p>Run the following commands inside the <code>activerecord_jr</code> directory to start interacting with the code:</p>
+
+<p><strong>Run bundle</strong>  </p>
+<div class="highlight"><pre><span class="nv">$ </span>bundle
+</pre></div>
+
+<p>This will read the <code>Gemfile</code> and install all the necessary gems for your app to run.</p>
+
+<p><strong>Set up the database</strong>  </p>
+<div class="highlight"><pre><span class="nv">$ </span>rake db:setup
+</pre></div>
+
+<p>This will create a database in <code>db/students.db</code> and create the <code>students</code> and <code>cohorts</code> tables. Read the <code>Rakefile</code> if you&#39;re curious how this works.</p>
+
+<p><strong>Populate the database</strong>  </p>
+<div class="highlight"><pre><span class="nv">$ </span>rake db:seed
+</pre></div>
+
+<p>This will populate your database with dummy cohort and student data. It will fail if you don&#39;t run <code>rake db:setup</code> first.</p>
+
+<p><strong>Playtime!</strong>  </p>
+<div class="highlight"><pre><span class="nv">$ </span>rake console
+</pre></div>
+
+<p>This will drop you into an <a href="http://en.wikipedia.org/wiki/Interactive_Ruby_Shell">IRB session</a> with all your application code loaded and working. Try it out by running the below.     (BTW, &quot;Ramon&quot; may not be a student in your database because it is dynamically generated by a rake task. You may need to try another common first name or peek in your .db file in sqlite3 to see who&#39;s there.)</p>
+<div class="highlight"><pre>   <span class="nv">ramons</span> <span class="o">=</span> Student.where<span class="o">(</span><span class="s1">&#39;first_name = ?&#39;</span>, <span class="s1">&#39;Ramon&#39;</span><span class="o">)</span>
+   ramons.first<span class="o">[</span>:first_name<span class="o">]</span>
+
+   <span class="nv">cohort</span> <span class="o">=</span> Cohort.where<span class="o">(</span><span class="s1">&#39;name = ?&#39;</span>, <span class="s1">&#39;Alpha&#39;</span><span class="o">)</span>.first
+   cohort.students.count
+   cohort.students.first<span class="o">[</span>:email<span class="o">]</span>
+</pre></div>
+
+<h3>Write Simple Tests</h3>
+
+<p>Before we refactor, we should write some simple tests. The tests don&#39;t need to be super thorough, but it should verify the core functionality: reading/writing from/to the database, updating attributes, etc.</p>
+
+<p>Once you have a handful of tests that pass for the skeleton code, you&#39;ll be more certain that your refactoring isn&#39;t inadvertently changing anything. If you refactor and the tests now fail, you&#39;ll know something has changed.</p>
+
+<p><code>rake db:seed</code> should continue to work the same before and after your refactoring, for example.</p>
+
+<p>Write a script that you can run to sanity check your refactoring. Make sure, for example, that something like this continues to work:</p>
+<div class="highlight"><pre><span class="nv">cohort</span> <span class="o">=</span> Cohort.find<span class="o">(</span>1<span class="o">)</span>
+cohort<span class="o">[</span>:name<span class="o">]</span> <span class="o">=</span> <span class="s1">&#39;Best Cohort Ever&#39;</span>
+cohort.save
+
+<span class="c"># This re-queries the database, so we&#39;re checking that we actually</span>
+<span class="c"># saved the data as intended</span>
+Cohort.find<span class="o">(</span>1<span class="o">)[</span>:name<span class="o">]</span> <span class="o">==</span> <span class="s1">&#39;Best Cohort Ever&#39;</span>
+</pre></div>
+
+<p>You can create a simple test file called, e.g., <code>test.rb</code>, in the root directory of ActiveRecord, Jr. It should include the <code>app.rb</code> on the first line, which automatically includes all the necessary code. Something like this:</p>
+<div class="highlight"><pre>require_relative <span class="s1">&#39;app&#39;</span>
+
+<span class="c"># Your totally awesome test code goes here</span>
+</pre></div>
+
+<p>When you run <code>test.rb</code> it should print out useful information so that it&#39;s easy as pie to tell when you&#39;ve (accidentally) broken something.</p>
+
+<h3>Refactor Into the Base Class</h3>
+
+<p>There are three core files to this application:</p>
+
+<ol>
+<li><code>models/database_model.rb</code></li>
+<li><code>models/student.rb</code></li>
+<li><code>models/cohort.rb</code></li>
+</ol>
+
+<p>If you look at <code>student.rb</code> and <code>cohort.rb</code> you&#39;ll see they have tons and tons of code in common. We&#39;re going to start by abstracting out the most simple of the common code into the base <code>Database::Model</code> class.</p>
+
+<p>Be careful because the base class only knows what it&#39;s told. <code>Database::Model</code> doesn&#39;t know that <code>Student</code> maps to the <code>students</code> table, for example. Refactor out the following shared methods from <code>Student</code> and <code>Cohort</code> without doing anything to the <code>Student</code> and <code>Cohort</code> classes beyond removing the methods. The code in the methods might need to change, though.</p>
+
+<ol>
+<li>Move <code>Student#initialize</code> and <code>Cohort#initialize</code> to <code>Database::Model#initialize</code></li>
+<li>Move <code>Student#save</code> and <code>Cohort#save</code> to <code>Database::Model#save</code></li>
+<li>Move <code>Student#[]</code> and <code>Cohort#[]</code> to <code>Database::Model#[]</code></li>
+<li>Move <code>Student#[]=</code> and <code>Cohort#[]=</code> to <code>Database::Model#[]</code></li>
+</ol>
+
+<p>Feel free to play around in the ActiveRecord, Jr. console to get a feel for how it works. And <strong>remember</strong> , once a method is moved to <code>Database::Model</code> you might need to change hard-coded references to the classes the method came from.</p>
+
+<h3>Submit Your Refactored Code</h3>
+
+<p>Upload <code>student.rb</code>, <code>cohort.rb</code>, and <code>database_model.rb</code> as a gist with three separate files. You can add multiple files to a gist by clicking the &quot;Add Another File&quot; button.</p>
+
+<h3>Questions for Reflection</h3>
+
+<ul>
+<li>What did these refactorings accomplish?</li>
+<li>If we decided to add or remove a field in the database, how many changes on the code would you have had to make before? What about after? What about other changes to the databases?</li>
+<li>Using your new code, can you write a script to populate the database with dummy data?</li>
+</ul>
+    });
+
+});</script></div><div id="footer"></div></body></html>
+<!-- Week 3 Day 3 -->
+
+<!DOCTYPE html><html><head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"6b0b5a2e6a","applicationID":"11108052","transactionName":"dwsKR0QKCVwEQh9bDVUICFZYAgBDTkNYVxI=","queueTime":1,"applicationTime":216,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(){}function r(t){function e(t){return t&&t instanceof n?t:t?a(t,i,o):o()}function c(n,r,o){t&&t(n,r,o);for(var i=e(o),a=f(n),c=a.length,u=0;c>u;u++)a[u].apply(i,r);return i}function u(t,e){p[t]=f(t).concat(e)}function f(t){return p[t]||[]}function s(){return r(c)}var p={};return{on:u,emit:c,create:s,listeners:f,context:e,_events:p}}function o(){return new n}var i="nr@context",a=t("gos");e.exports=r()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){if(!v++){var t=l.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(p,function(e,n){t[e]||(t[e]=n)});var n="https"===s.split(":")[0]||t.sslForHttp;l.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=l.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),c=t(1),u=window,f=u.document;t(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-852.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),l=e.exports={offset:i(),origin:s,features:{},xhrWrappable:d};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",n)),a("mark",["firstbyte",i()]);var v=0},{1:12,2:3,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],12:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],13:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}]},{},["G9z0Bl"]);</script><title>LearningPortal</title><link rel="stylesheet" media="screen" href="/assets/application-3260db8232a33ad3c9f7ce1e0c7b146c.css" /><script src="/assets/application-a615604357cfcc1602a15757d5794e47.js"></script><meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="YCIQ9r9clXFTAe4QltO2XTAol/neaDBrc7MqXRxk+qkDDU5S0y+zvSJiRdcwvFpmx4wl0phTL81p9VzZel6S+w==" /></head><body><nav class="navbar navbar-default" role="navigation"><div class="container"><div class="navbar-header"><button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/">NEXT Academy</a></div><div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><ul class="nav navbar-nav"><li><a href="/challenges">Challenges</a></li><li><a href="https://docs.google.com/spreadsheets/d/1MoYjS2uGg53pMk9Rsyn9ECcyZ0guncfEzGM4sFJGnmw/edit?usp=sharing">Latest Attendance</a></li></ul><ul class="nav navbar-nav navbar-right"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Signed In As&nbsp;<span class="caret"></span></a><ul class="dropdown-menu" role="menu"><li><a title="contrepoint21@gmail.com" href="/users/64cb09ed-0061-406f-9234-245f78a43a39/edit"><img height="22" width="22" alt="contrepoint21@gmail.com" class="header-user-gravatar" src="http://www.gravatar.com/avatar/d20d2736d18703ba288facd70c301a98" /> Janice</a></li><li class="divider"></li><li><a href="/signin">Sign in another user</a></li><li><a rel="nofollow" data-method="delete" href="/signout">Sign out all</a></li></ul></li></ul></div></div></nav><div class="container"><div class="row page-header challenge-header"><div class="col-sm-12"><h2>Student Roster DB from Schema&nbsp;<span class="label label-danger">Core</span></h2></div></div><div class="row" id="challenge"><div class="col-sm-2"><ul class="nav nav-pills nav-stacked"><li><a href="/challenges">Back</a></li><li><a class="btn btn-warning" rel="nofollow" data-method="post" href="/challenges/73/attempts">Start Challenge</a></li></ul></div><div class="col-sm-8"><div class="row"><div class="col-sm-12"><ul class="nav nav-tabs" id="challengeTab" role="tablist"><li class="active"><a data-toggle="tab" href="#body" role="tab"> Description</a></li><li><a data-toggle="tab" href="#attempts" role="tab"> Your Attempts</a></li><li><a data-toggle="tab" href="#other-attempts" role="tab"> Recent</a></li></ul><div class="tab-content"><div class="tab-pane fade in active" id="body"><p>It&#39;s time to start building the databases from all those schema we designed, and we&#39;ll use Ruby to do it.</p>
+
+<h2>Objectives</h2>
+
+<h3>Create the student database in Ruby</h3>
+
+<p>Revisit the <a href="http://learn.codedivision.my/challenges/53">Student Schema</a> and write a ruby program that creates the database from this schema.</p>
+
+<p>First, include the <a href="https://github.com/luislavena/sqlite3-ruby">Ruby gem for SQLite</a>. Install it by running:</p>
+<div class="highlight"><pre>gem install sqlite3
+</pre></div>
+
+<p>Next, create a file called <code>setup.rb</code> that you will only run once to create your database. Use the code below as a template to get you started.</p>
+<div class="highlight"><pre>require <span class="s1">&#39;sqlite3&#39;</span>
+
+<span class="c"># If you want to overwrite your database you will need</span>
+<span class="c"># to delete it before running this file</span>
+<span class="nv">$db</span> <span class="o">=</span> SQLite3::Database.new <span class="s2">&quot;students.db&quot;</span>
+
+module StudentDB
+  def self.setup
+    <span class="nv">$db</span>.execute<span class="o">(</span>
+      &lt;&lt;-SQL
+        CREATE TABLE students <span class="o">(</span>
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          first_name VARCHAR<span class="o">(</span>64<span class="o">)</span> NOT NULL,
+          last_name VARCHAR<span class="o">(</span>64<span class="o">)</span> NOT NULL,
+
+          -- add the additional attributes here!
+
+          created_at DATETIME NOT NULL,
+          updated_at DATETIME NOT NULL
+        <span class="o">)</span>;
+      SQL
+    <span class="o">)</span>
+  end
+
+  def self.seed
+    <span class="c"># Add a few records to your database when you start</span>
+    <span class="nv">$db</span>.execute<span class="o">(</span>
+      &lt;&lt;-SQL
+        INSERT INTO students
+          <span class="o">(</span>first_name, last_name, created_at, updated_at<span class="o">)</span>
+        VALUES
+          <span class="o">(</span><span class="s1">&#39;Brick&#39;</span>,<span class="s1">&#39;Thornton&#39;</span>,DATETIME<span class="o">(</span><span class="s1">&#39;now&#39;</span><span class="o">)</span>, DATETIME<span class="o">(</span><span class="s1">&#39;now&#39;</span><span class="o">))</span>;
+
+        -- Create two more students who are at least as cool as this one.
+      SQL
+    <span class="o">)</span>
+  end
+end
+</pre></div>
+
+<p>Verify your database is working properly.</p>
+
+<p>Load your <code>setup.rb</code> file in irb and run the <code>StudentDB.setup</code> and <code>StudentDB.seed</code> methods. Then open up the Sqlite console with the <code>students.db</code> database and make sure you can run <code>SELECT</code> on these records.</p>
+
+<h3>Create the Student Class</h3>
+
+<p>There are some clear parallels with the Ruby objects and the Database tables.</p>
+
+<p><tbody>
+<tr>
+    <th>SQL land</th>
+    <th>Ruby land</th>
+  </tr>
+  <tr>
+    <td>A table named <code>students</code>
+</td>
+    <td>A class named <code>Student</code>
+</td>
+  </tr>
+  <tr>
+    <td>A row from <code>students</code>
+</td>
+    <td>An instance of <code>Student</code>
+</td>
+  </tr>
+ <tr>
+    <td><pre>SELECT * FROM students </pre></td>
+    <td><pre>Student.all</pre></td>
+  </tr>
+  <tr>
+    <td><pre>SELECT * FROM students WHERE first<em>name = &#39;bob&#39;<br><b>OR</b><br>SELECT * FROM students WHERE first</em>name = ? , &#39;bob&#39;</pre></td>
+    <td><pre>Student.where(&#39;first_name = ?&#39;, &#39;bob&#39;)</pre></td>
+  </tr>
+  <tr>
+    <td><pre>SELECT * FROM students WHERE id = 10<br><b>OR</b><br>SELECT * FROM students WHERE id = ? , 10</pre></td>
+    <td><pre>Student.where(&#39;id = ?&#39;, 10)</pre></td>
+  </tr>
+    <tr>
+<td><pre>INSERT INTO students (field1, field2, ...)
+VALUES(value1, value2, ...)</pre></td>
+    <td>
+      <pre> student = Student.new(data)
+student.save</pre>
+    </td>
+  </tr>
+  <tr>
+    <td><pre>DELETE FROM students WHERE id = 40</pre></td>
+    <td>???</td>
+  </tr>
+</tbody></p>
+
+<p><strong>NOTE:</strong> In the SQL above, two versions of <code>WHERE</code> clauses are given. In the second version, a SQL placeholder <code>?</code> is used. This format helps avoid SQL injection attacks. You can see more examples of <a href="http://sqlite-ruby.rubyforge.org/sqlite3/faq.html#538670816">placeholders in WHERE clauses</a> and <a href="http://sqlite-ruby.rubyforge.org/sqlite3/faq.html#538670616">place holders in INSERT clauses</a>.</p>
+
+<h3>Add methods to the Student Class to execute SQL commands</h3>
+
+<p>Then write Ruby code that allows you to complete the following tasks:</p>
+
+<ol>
+<li>Add a student</li>
+<li>Delete a student</li>
+<li>Show a list of all students</li>
+<li>Show a list of students with a particular first_name</li>
+<li>Show a list of students with any particular attribute</li>
+</ol>
+
+<p><em>Use the table above as a guide for your methods. What can you infer about each method&#39;s declaration and structure?</em></p>
+
+<p><strong>Extra Credit:</strong></p>
+
+<ul>
+<li>List which students have a birthday this month</li>
+<li>List students by birthday</li>
+</ul>
+
+<!-- Week 3 Day 3 -->
+
+<!DOCTYPE html><html><head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"6b0b5a2e6a","applicationID":"11108052","transactionName":"dwsKR0QKCVwEQh9bDVUICFZYAgBDTkNYVxI=","queueTime":0,"applicationTime":152,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(){}function r(t){function e(t){return t&&t instanceof n?t:t?a(t,i,o):o()}function c(n,r,o){t&&t(n,r,o);for(var i=e(o),a=f(n),c=a.length,u=0;c>u;u++)a[u].apply(i,r);return i}function u(t,e){p[t]=f(t).concat(e)}function f(t){return p[t]||[]}function s(){return r(c)}var p={};return{on:u,emit:c,create:s,listeners:f,context:e,_events:p}}function o(){return new n}var i="nr@context",a=t("gos");e.exports=r()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){if(!v++){var t=l.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(p,function(e,n){t[e]||(t[e]=n)});var n="https"===s.split(":")[0]||t.sslForHttp;l.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=l.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),c=t(1),u=window,f=u.document;t(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-852.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),l=e.exports={offset:i(),origin:s,features:{},xhrWrappable:d};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",n)),a("mark",["firstbyte",i()]);var v=0},{1:12,2:3,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],12:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],13:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}]},{},["G9z0Bl"]);</script><title>LearningPortal</title><link rel="stylesheet" media="screen" href="/assets/application-3260db8232a33ad3c9f7ce1e0c7b146c.css" /><script src="/assets/application-a615604357cfcc1602a15757d5794e47.js"></script><meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="4yxP0PhGMrY79Ml/7TRzM1YbHUDXGkhCi0bz6m5kjzKAAxF0lDUUekqXYrhLW58Iob+va5EhV+SRAIVuCF7nYA==" /></head><body><nav class="navbar navbar-default" role="navigation"><div class="container"><div class="navbar-header"><button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/">NEXT Academy</a></div><div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><ul class="nav navbar-nav"><li><a href="/challenges">Challenges</a></li><li><a href="https://docs.google.com/spreadsheets/d/1MoYjS2uGg53pMk9Rsyn9ECcyZ0guncfEzGM4sFJGnmw/edit?usp=sharing">Latest Attendance</a></li></ul><ul class="nav navbar-nav navbar-right"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Signed In As&nbsp;<span class="caret"></span></a><ul class="dropdown-menu" role="menu"><li><a title="contrepoint21@gmail.com" href="/users/64cb09ed-0061-406f-9234-245f78a43a39/edit"><img height="22" width="22" alt="contrepoint21@gmail.com" class="header-user-gravatar" src="http://www.gravatar.com/avatar/d20d2736d18703ba288facd70c301a98" /> Janice</a></li><li class="divider"></li><li><a href="/signin">Sign in another user</a></li><li><a rel="nofollow" data-method="delete" href="/signout">Sign out all</a></li></ul></li></ul></div></div></nav><div class="container"><div class="row page-header challenge-header"><div class="col-sm-12"><h2>Address Book DB from Schema&nbsp;<span class="label label-danger">Core</span></h2></div></div><div class="row" id="challenge"><div class="col-sm-2"><ul class="nav nav-pills nav-stacked"><li><a href="/challenges">Back</a></li><li><a class="btn btn-warning" rel="nofollow" data-method="post" href="/challenges/70/attempts">Start Challenge</a></li></ul></div><div class="col-sm-8"><div class="row"><div class="col-sm-12"><ul class="nav nav-tabs" id="challengeTab" role="tablist"><li class="active"><a data-toggle="tab" href="#body" role="tab"> Description</a></li><li><a data-toggle="tab" href="#attempts" role="tab"> Your Attempts</a></li><li><a data-toggle="tab" href="#other-attempts" role="tab"> Recent</a></li></ul><div class="tab-content"><div class="tab-pane fade in active" id="body"><p>Let&#39;s build an address book so we can keep track of all the awesome programmers we know.</p>
+
+<h2>Objectives</h2>
+
+<p>Revisit the <a href="http://learn.codedivision.my/challenges/69">Address Book Schema</a> and write a ruby program to create Objects to represent the address book and create the database <code>address_book.db</code></p>
+
+<h3>Create the address_book database</h3>
+
+<p>Create the SQL Schema that represents your database tables. Then, create a file called <code>setup.rb</code> which you will run only once and will create your database. All other parts of your code will assume that the database has already been created.</p>
+
+<p>Next, load some initial records into this database from hardcoded SQL statements. This code should also be in <code>setup.rb</code>.</p>
+
+<p><strong>Extra Credit</strong> : Instead of hardcoding your insert statements, create a csv/YAML/JSON file with the data and import it.</p>
+
+<h3>Build the Ruby classes</h3>
+
+<p>First, create classes that correspond to your tables, e.g., a &quot;contacts&quot; table corresponds to a Contact class. These classes should have methods that allow you to add, delete, update records in the database.</p>
+
+<p>It should work as follows:</p>
+<div class="highlight"><pre><span class="nv">contact</span> <span class="o">=</span> Contact.new<span class="o">(</span>:name <span class="o">=</span>&gt; <span class="s2">&quot;Alex&quot;</span><span class="o">)</span>
+contact.id <span class="c"># nil</span>
+contact.save <span class="c"># This executes an INSERT statement and makes a new record</span>
+contact.id <span class="c"># e.g., 20</span>
+
+contact.name <span class="o">=</span> <span class="s2">&quot;Bob&quot;</span>
+contact.save <span class="c"># This executes an UPDATE statement</span>
+</pre></div>
+
+<p>Note, you will also need to allow your classes to have access to your database. There are several ways to do this, but an easy way would be just to create a global variable that is accessible in all of your classes. (this is fine for now we&#39;ll get into more OO approaches later).</p>
+<div class="highlight"><pre><span class="nv">$db</span> <span class="o">=</span> SQLite3::Database.new <span class="s2">&quot;address_book.db&quot;</span>
+</pre></div>
+
+<h3>Work with the address_book database using Ruby</h3>
+
+<p>Next, create driver code and additional methods in your code that allows you to complete the following tasks.</p>
+
+<ol>
+<li>Add a contact</li>
+<li>Add a group</li>
+<li>Change a contact address</li>
+<li>Delete a contact</li>
+<li>Delete a group - careful here - what does this mean? What implications does it (should it) have on your data?</li>
+</ol>
+
+<h3>Data validation</h3>
+
+<p>Input from users is &quot;Dangerous&quot;. What if they give you a phone number with 17 digits? How about an address without a state? How does your database handle this? How does your Ruby code handle this?</p>
+
+<p>These are complex questions. Come up with a plan to work with phone numbers (must have a valid format) and email addresses (must have a valid format and be unique).</p>
+
+<p>Implement this plan in your code.</p>
